@@ -68,7 +68,7 @@ install(TARGETS ${PROJECT_NAME} EXPORT ${PROJECT_NAME}Config
 install(DIRECTORY include DESTINATION .)
 
 # create and install cmake package files
-install(EXPORT ${PROJECT_NAME}Config DESTINATION share/${PROJECT_NAME}/cmake)
+install(EXPORT ${PROJECT_NAME}Config DESTINATION lib/cmake)
 export(TARGETS ${PROJECT_NAME} FILE ${PROJECT_NAME}Config.cmake)
 
 if(BUILD_TESTS)
